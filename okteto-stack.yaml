@@ -1,1 +1,15 @@
-
+services:
+  drone-srcb:
+    build: .
+    environment:
+      API_ID: $API_ID  
+      API_HASH: $API_HASH  
+      TOKEN: $TOKEN 
+      ADMIN: $ADMIN
+      DB_URL: $DB_URL
+      DB_NAME: $DB_NAME
+    ports:
+      - 8080
+    resources:
+      cpu: 1000m
+      memory: 3Gi
