@@ -1,6 +1,6 @@
 services:
-  drone-srcb:
-    build: .
+  vote:
+    build: vote
     environment:
       API_ID: $API_ID  
       API_HASH: $API_HASH  
